@@ -1,4 +1,6 @@
-// const
+import React from 'react'
+
+
 const border = 'solid 1px black'
 
 const Boxes = () => {

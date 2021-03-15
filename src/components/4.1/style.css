@@ -1,0 +1,11 @@
+body{
+    background: blue;
+}
+
+.bold{
+    background: red;
+}
+.notBold{
+    background: aqua;
+    margin: 100px;
+}

@@ -1,0 +1,38 @@
+body {
+    background: lightblue;
+}
+
+#mainCont{
+    display: flex;
+    margin: 10px;
+}
+.piece{
+    margin: 20px;
+}
+
+.cardContainer {
+    background: red;
+    width: 300px;
+    height: 450px;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+}
+
+.img1 {
+   background: url("https://www.placemonkeys.com/500") no-repeat center center/cover;
+
+
+}
+.img2 {
+    background: green;
+
+
+}
+.img3 {
+    background: grey;
+
+
+}
