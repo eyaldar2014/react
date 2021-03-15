@@ -27,12 +27,12 @@ body {
 
 }
 .img2 {
-    background: green;
+    background: url("https://www.placemonkeys.com/500") no-repeat center center/cover;
 
 
 }
 .img3 {
-    background: grey;
+    background: url("https://www.placemonkeys.com/500") no-repeat center center/cover;
 
 
 }
