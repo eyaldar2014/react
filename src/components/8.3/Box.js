@@ -1,15 +1,22 @@
 import react from "react";
+import "./style.css"
 
 class X extends react.Component {
 
     constructor(props) {
         super();
 
-        this.state = {}
+        this.state = {
+            current: "in",
+        }
     }
 
     componentDidMount() {
         console.log('[constructor]')
+
+        setTimeout(this.myFunc, 4000)
+
+
     }
 
     componentDidUpdate() {
@@ -17,14 +24,18 @@ class X extends react.Component {
         console.log(this.state)
     }
 
+    myFunc=()=>{
+        setTimeout(this.setState({
+            current : "out"
+        }), 4000)
+    }
 
     render() {
 
-        console.log('it works')
 
 
         return <>
-
+            <div className={'box ' + this.props.specifc + this.state.current}> </div>
 
         </>
     }
@@ -33,3 +44,7 @@ class X extends react.Component {
 
 
 export default X
+
+
+
+

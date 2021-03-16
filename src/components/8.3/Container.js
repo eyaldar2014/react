@@ -1,4 +1,6 @@
 import react from "react";
+import "./style.css"
+import Box from './Box'
 
 class X extends react.Component {
 
@@ -24,7 +26,9 @@ class X extends react.Component {
 
 
         return <>
-
+            <Box specifc="box1 "/>
+            <Box specifc="box2 "/>
+            <Box specifc="box3 "/>
 
         </>
     }
@@ -33,3 +37,7 @@ class X extends react.Component {
 
 
 export default X
+
+
+
+
