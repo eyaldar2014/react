@@ -6,24 +6,22 @@ class HideAndSeek extends react.Component {
         super();
 
         this.state = {
-            starter : true ,
-            thing : "box" ,
+            starter: true,
+            thing: "box",
         }
     }
 
     showAndHide = () => {
 
-        if(this.state.starter === true){
+        if (this.state.starter === true) {
 
             // console.log(this.state.starter)
-            this.setState({thing : ""})
-            this.setState({starter : false})
-        }
-
-        else{
+            this.setState({thing: ""})
+            this.setState({starter: false})
+        } else {
             // console.log(this.state.starter)
-            this.setState({thing : 'box'})
-            this.setState({starter : true})
+            this.setState({thing: 'box'})
+            this.setState({starter: true})
         }
     }
 
@@ -31,7 +29,7 @@ class HideAndSeek extends react.Component {
 
         return <>
             <div className="container">
-            <input type={"button"} value={"hide/show"} onClick={this.showAndHide}/>
+                <input type={"button"} value={"hide/show"} onClick={this.showAndHide}/>
                 <div className={this.state.thing}></div>
             </div>
 
