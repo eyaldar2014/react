@@ -1,0 +1,20 @@
+body{
+    background: #61dafb;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.first{
+background: red;
+}
+
+.second{
+    background: green;
+}
+
+.circle{
+    border-radius: 50%;
+}

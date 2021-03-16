@@ -7,7 +7,9 @@ import './App.css';
 // import Ex from './components/4.2/Container'
 // import Ex from './components/7.1/Container'
 // import Ex from './components/7.2/Container'
-import Ex from './components/8.1/LifeCycleMethods'
+// import Ex from './components/8.1/LifeCycleMethods'
+import Ex from './components/8.2/Container'
+
 
 
 
