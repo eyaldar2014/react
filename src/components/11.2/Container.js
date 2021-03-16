@@ -6,8 +6,9 @@
 // this.props.parentCallback('data from child'); command to send data to parent
 //
 
+
 import react from "react";
-//import './style.css'
+import './style.css'
 
 class X extends react.Component {
 

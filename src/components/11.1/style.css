@@ -1,0 +1,26 @@
+:root{
+    --blue:  #004E7C ;
+    --red:  #B73225 ;
+    --green:  #266150 ;
+}
+
+body{
+    background: cadetblue;
+}
+
+.btn{
+    width: 200px;
+    height: 70px;
+}
+
+.blue{
+    background: var(--blue);
+}
+
+.red{
+    background: var(--red);
+}
+
+.green{
+    background: var(--green);
+}
