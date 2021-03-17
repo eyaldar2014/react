@@ -9,7 +9,8 @@ class X extends react.Component {
         super();
 
         this.state = {
-            data: ""
+            data: "" ,
+            try: ""
         }
     }
 
@@ -32,11 +33,13 @@ class X extends react.Component {
 
         return <>
 
-            <Button parentCallback = {this.btnCallBack} value='hello' color='red'></Button>
-            <Button parentCallback = {this.btnCallBack} value='hello' color='blue'></Button>
-            <Button parentCallback = {this.btnCallBack} value='hello' color='green'></Button>
+            <Button parentCallBack = {this.btnCallBack} color='red' ></Button>
+            <Button parentCallBack = {this.btnCallBack} color='blue' ></Button>
+            <Button parentCallBack = {this.btnCallBack} color='green' ></Button>
 
             <br/>
+
+            <div>{this.state.try}</div>
 
             <h1>the color you clicked is : {this.state.data}</h1>
         </>

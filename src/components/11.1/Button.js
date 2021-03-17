@@ -9,22 +9,21 @@ class Button extends react.Component {
     }
 
     componentDidMount() {
-        console.log('[constructor]')
+        console.log('[Button constructor]')
     }
 
     componentDidUpdate() {
-        console.log('[componentDidUpdate]')
+        console.log('[Button componentDidUpdate]')
     }
 
     btnFunc = (e) => {
         console.log("clicked")
-        this.props.parentCallback(e.target.value);
+        this.props.parentCallBack(e.target.value);
     }
 
     render() {
-        console.log('[render]')
+        console.log('[Button render]')
         console.log(this.state)
-
 
         return (
 
