@@ -3,49 +3,54 @@ import "./style.css";
 
 import Button from "./Button"
 
+
 class X extends react.Component {
 
     constructor(props) {
         super();
 
         this.state = {
-            data: "" ,
-            try: ""
+            data: "",
+            try: "",
+            colors: ['red', 'blue', 'green']
+
         }
     }
 
-    btnCallBack =(childData)=>{
+    btnCallBack = (childData) => {
         this.setState({
-            data : childData
+            data: childData
         })
     }
 
-    componentDidMount() {
+    componentDidMount()
+    {
         console.log('[constructor]')
     }
-    componentDidUpdate() {
+    componentDidUpdate()
+    {
         console.log('[componentDidUpdate]')
     }
+
+
     render() {
         console.log('[render]')
         console.log(this.state)
 
 
         return <>
-
-            <Button parentCallBack = {this.btnCallBack} color='red' ></Button>
-            <Button parentCallBack = {this.btnCallBack} color='blue' ></Button>
-            <Button parentCallBack = {this.btnCallBack} color='green' ></Button>
+            {
+                this.state.colors.map((color) => {
+                    return <Button parentCallBack={this.btnCallBack} color={color}></Button>
+                })
+            }
 
             <br/>
-
-            <div>{this.state.try}</div>
 
             <h1>the color you clicked is : {this.state.data}</h1>
         </>
     }
 
 }
-
 
 export default X

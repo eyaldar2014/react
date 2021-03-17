@@ -14,11 +14,16 @@ class X extends react.Component {
     constructor(props) {
         super();
 
-        this.state = {}
+        this.state = {
+            data : ''
+        }
     }
 
     componentDidMount() {
         console.log('[constructor]')
+        this.setState({
+            data : this.props
+        })
     }
 
     componentDidUpdate() {
