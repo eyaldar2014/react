@@ -10,7 +10,7 @@
 import react from "react";
 import './style.css'
 
-class X extends react.Component  {
+class X extends react.Component {
 
     constructor(props) {
         super();
