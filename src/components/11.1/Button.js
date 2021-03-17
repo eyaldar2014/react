@@ -26,7 +26,7 @@ class Button extends react.Component {
         console.log(this.state)
 
         return (
-
+            //now we learned not to work with props inside the class but the state
             <input type='button' className={'btn' +" "+ this.props.color} value={this.props.color} onClick={this.btnFunc}></input>
 
         )
