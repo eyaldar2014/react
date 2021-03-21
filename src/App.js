@@ -13,7 +13,10 @@ import './App.css';
 // import Ex from './components/9.1/Container'
 // import Ex from './components/11.1/Container'
 // import Ex from './components/11.2/Container'
-import Ex from './components/11.3/Container'
+// import Ex from './components/11.3/Container'
+// import WeekendAssignment from './components/weekendAssignment/Bg'
+import Ex from './components/12.1/Container'
+// import Data from './components/13.1/Data'
 
 
 
@@ -22,7 +25,7 @@ function App() {
   return (
     <div className="App">
 
-      <Ex/>
+      <Ex />
 
     </div>
 
