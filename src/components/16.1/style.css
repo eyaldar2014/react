@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blue: #004E7C;
+    --red: #B73225;
+    --green: #266150;
+}
+
+body {
+    background: tan;
+}
+
+.header{
+    width: 100%;
+    min-height: 50px;
+    background: #B73225;
+    text-align: left;
+    padding: 20px;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
