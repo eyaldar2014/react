@@ -1,3 +1,14 @@
+
+// add image to react component
+// function Avatar(props) {
+//     return (
+//         <img className="Avatar"
+//              src={props.user.avatarUrl}
+//              alt={props.user.name}
+//         />
+//     );
+// }
+
 import react from "react";
 import './style.css'
 
