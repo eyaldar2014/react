@@ -10,6 +10,7 @@
 // }
 
 import react from "react";
+import axios from 'axios';
 import './style.css'
 
 import Item from './Item'

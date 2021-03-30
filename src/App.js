@@ -20,23 +20,30 @@ import './App.css';
 // import Ex from './components/14.1/Container'
 // import Ex from './components/14.2/Container'
 // import Ex from './components/16.1/Container'
+
 // import Ex from './components/17.1/Container'
+// import Ex from './components/17.1/TryIt'
+
+
 // import Ex from './components/18.1/Container'
 // import Ex from './components/18.2/Container'
 // import Ex from './components/18.3/Container'
-// import Ex from './components/18.4/Container'
-import Ex from './components/18.5/Container'
+// import Ex from './components/18.4 wrong attempt - 18.5 fix/Container'
+// import Ex from './components/18.5/Container'
+import Ex from './components/19.1/Container'
 
 
 function App() {
-  return (
-    <div>
+    return (
+        <div>
 
-      <Ex />
+            <Ex />
 
-    </div>
+        </div>
 
-  );
+    );
 }
 
 export default App;
+
+
