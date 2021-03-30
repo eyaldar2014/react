@@ -4,37 +4,26 @@ import react from 'react';
 const Container = (props) => {
 // console.log(props)
 //
-    // state examples :
-    //
-    //1// const [state, setState] = react.useState({
-    //      name: '',
-    //      age: '30'
-    //  })
-    //
-    //2// const [dog, setDog] = react.useState('charlie')
 
-    //internal function example :
-    //
-    // const clickEvent = () => {
-    //     console.log(state)
-    // }
-
-    // set state example :
-    //
-    // const newFunc =()=>{
-    //     if(dog === 'charlie'){
-    //         setDog('boy')
-    //     }
-    //     console.log(dog)
-    //     return true
-    // }
+    // const [a, b] = react.useState()
 
 
-    // on render :
+    // react.useEffect(async() => {
+
+    // const result = await (await fetch('enter URL')).json()
+    //
+    // console.log(result)
+
+    // }, [])
+
+
     // react.useEffect(() => {
-    //     console.log('render')
-    //     }
-    // );
+    //
+    // }, [])
+
+
+
+    // const handleChange =(e)=>{}
 
 
     return <>
