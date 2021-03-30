@@ -30,7 +30,8 @@ import './App.css';
 // import Ex from './components/18.3/Container'
 // import Ex from './components/18.4 wrong attempt - 18.5 fix/Container'
 // import Ex from './components/18.5/Container'
-import Ex from './components/19.1/Container'
+// import Ex from './components/19.1/Container'
+import Ex from './components/19.2/Container'
 
 
 function App() {
