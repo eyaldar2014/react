@@ -1,9 +1,8 @@
 import react from 'react';
+import './style.css'
 
-// props initialization :
-const Container = (props) => {
-// console.log(props)
-//
+const Container = () => {
+
 
     // const [a, b] = react.useState()
 
@@ -23,7 +22,7 @@ const Container = (props) => {
 
 
 
-//     const handleChange =(e)=>{}
+    // const handleChange =(e)=>{}
 
 
     return <>

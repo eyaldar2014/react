@@ -1,18 +1,8 @@
-
-// add image to react component
-// function Avatar(props) {
-//     return (
-//         <img className="Avatar"
-//              src={props.user.avatarUrl}
-//              alt={props.user.name}
-//         />
-//     );
-// }
-
 import react from "react";
 import axios from 'axios';
 import './style.css'
 
+import API from "../17.1/ApiEngine";
 import Item from './Item'
 
 class Container extends react.Component {
@@ -23,21 +13,41 @@ class Container extends react.Component {
         this.state = {
             name: '',
             img: '',
-            id: 2,
+            id: 1,
             users: [
                 {
                     id: 0,
                     name: 'first',
                     img: 'https://images.newscientist.com/wp-content/uploads/2020/03/31210900/b8kk6g_web.jpg?width=700'
                 },
-                {
-                    id: 1,
-                    name: 'second',
-                    img: 'https://images.newscientist.com/wp-content/uploads/2020/03/31210900/b8kk6g_web.jpg?width=700'
-                }
             ]
         }
     }
+
+    sendData =async(user)=>{
+
+                const response = await API.post(`thing`, {user})
+                console.log(response.data)
+                }
+
+                deleteData =async(id)=>{
+
+                            const response = await API.delete("thing/" + (id))
+                            console.log(response.data)
+                            }
+
+
+async componentDidMount() {
+let array = this.state.users
+await this.sendData(array)
+}
+
+    async updateApi(state) {
+        await this.deleteData(1)
+        await this.sendData(state)
+    }
+
+
 
     read = (id) => {
 
@@ -56,9 +66,12 @@ class Container extends react.Component {
             img: img
         }
 
+
         let newArray = this.state.users
 
         newArray.push(temp)
+
+        this.updateApi(newArray)
 
         return this.setState({
             id: this.state.id + 1,
@@ -74,10 +87,13 @@ class Container extends react.Component {
             return user.id !== id
         })
 
+        this.updateApi(newArray)
+
         return this.setState({
             users: newArray
         })
     }
+
 
     updateName = (id, name) => {
 
@@ -92,6 +108,8 @@ class Container extends react.Component {
                 return user
             }
         })
+
+this.updateApi(newArray)
 
         return this.setState({
             users: newArray
@@ -117,10 +135,18 @@ class Container extends react.Component {
             }
         })
 
+this.updateApi(newArray)
+
         return this.setState({
             users: newArray
         })
     }
+
+
+
+
+
+
 
     handleIt=(e)=>{
         // console.log(e.target.name)
@@ -133,6 +159,10 @@ class Container extends react.Component {
     add=()=>{
         this.write(this.state.name , this.state.img)
     }
+
+
+
+
 
 
     render() {

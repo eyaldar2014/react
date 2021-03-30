@@ -16,15 +16,12 @@ import './App.css';
 // import Ex from './components/11.3/Container'
 // import WeekendAssignment from './components/weekendAssignment/Bg'
 // import Ex from './components/12.1/Container'
-// import Data from './components/13.1/Data'
+// import Ex from './components/13.1/Container'
+import Ex from './components/13.2/Container'
 // import Ex from './components/14.1/Container'
 // import Ex from './components/14.2/Container'
 // import Ex from './components/16.1/Container'
-
 // import Ex from './components/17.1/Container'
-// import Ex from './components/17.1/TryIt'
-
-
 // import Ex from './components/18.1/Container'
 // import Ex from './components/18.2/Container'
 // import Ex from './components/18.3/Container'
@@ -32,7 +29,7 @@ import './App.css';
 // import Ex from './components/18.5/Container'
 // import Ex from './components/19.1/Container'
 // import Ex from './components/19.2/Container'
-import Ex from './components/19.3/Container'
+// import Ex from './components/19.3/Container'
 
 
 function App() {

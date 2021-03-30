@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blue: #004E7C;
+    --red: #B73225;
+    --green: #266150;
+}
+
+body {
+    background: tomato;
+}
