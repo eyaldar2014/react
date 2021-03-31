@@ -18,7 +18,7 @@ import './App.css';
 // import Ex from './components/12.1/Container'
 // import Ex from './components/13.1/Container'
 
-// import Ex from './components/13.2/Container'
+import Ex from './components/13.2/Container'
 
 // import Ex from './components/14.1/Container'
 // import Ex from './components/14.2/Container'
@@ -35,7 +35,7 @@ import './App.css';
 // import Ex from './components/20.1/Container'
 // import Ex from './components/21.1/Container'
 // import Ex from './components/21.2/Container'
-import Ex from './components/21.3/Container'
+// import Ex from './components/21.3/Container'
 
 function App() {
     return (

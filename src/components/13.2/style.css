@@ -13,3 +13,10 @@
 body {
     background: tomato;
 }
+
+.avatar{
+    text-align: center;
+    padding: 30px;
+    border: 1px dotted blue;
+    margin: 30px;
+}
