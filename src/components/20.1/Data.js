@@ -12,11 +12,15 @@ const Container = () => {
 
 
     const getData = async (user) => {
-        const response = await axios.get('https://randomuser.me/api/', {cancelToken: source.token})
+        const response = await axios.get('https://randomuser.me/api/', {cancelToken: source.token}).catch((err)=>{
+            console.log(err)
+        })
 
-        setContent(response.data.results[0].email)
+        if(response){
+            setContent(response.data.results[0].email)
+        }
     }
-    
+
     react.useEffect(() => {
         getData()
         return () => {
