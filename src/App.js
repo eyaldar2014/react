@@ -17,7 +17,9 @@ import './App.css';
 // import WeekendAssignment from './components/weekendAssignment/Bg'
 // import Ex from './components/12.1/Container'
 // import Ex from './components/13.1/Container'
-import Ex from './components/13.2/Container'
+
+// import Ex from './components/13.2/Container'
+
 // import Ex from './components/14.1/Container'
 // import Ex from './components/14.2/Container'
 // import Ex from './components/16.1/Container'
@@ -30,6 +32,7 @@ import Ex from './components/13.2/Container'
 // import Ex from './components/19.1/Container'
 // import Ex from './components/19.2/Container'
 // import Ex from './components/19.3/Container'
+import Ex from './components/20.1/Container'
 
 
 function App() {

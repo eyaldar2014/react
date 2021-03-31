@@ -8,14 +8,6 @@ const Container = (props) => {
     // const [a, b] = react.useState()
 
 
-    // react.useEffect(async() => {
-
-    // const result = await (await fetch('enter URL')).json()
-    //
-    // console.log(result)
-
-    // }, [])
-
 
     // react.useEffect(() => {
     //

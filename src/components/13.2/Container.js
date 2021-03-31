@@ -1,27 +1,47 @@
 import react from 'react';
 import './style.css'
 
+import API from './Api'
+
 const Container = () => {
 
 
-    // const [a, b] = react.useState()
+    const [data, setData] = react.useState()
 
 
-    // react.useEffect(async() => {
+    // react.useEffect(() => {}[])
 
-    // const result = await (await fetch('enter URL')).json()
-    //
-    // console.log(result)
+    react.useEffect(() => {
 
-    // }, [])
+        tenTimes()
 
-
-    // react.useEffect(() => {
-    //
-    // }, [])
+    }, [])
 
 
+    const tenTimes=async()=>{
 
+            Promise.all([callApi(), callApi(), callApi()]).then(function(values) {
+              console.log(values);
+            });
+
+    }
+
+   const callApi = async () => {
+
+        try {
+            const result = await API.get()
+            console.log(result.data.results)
+//             return result
+//             array.push(result.data.results)
+        } catch (error) {
+            console.log(error)
+        }
+   }
+
+
+
+
+    // const handleClick =(e)=>{}
     // const handleChange =(e)=>{}
 
 

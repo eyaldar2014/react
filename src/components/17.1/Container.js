@@ -24,29 +24,28 @@ class Container extends react.Component {
         }
     }
 
-    sendData =async(user)=>{
+    sendData = async (user) => {
 
-                const response = await API.post(`thing`, {user})
-                console.log(response.data)
-                }
+        const response = await API.post(`thing`, {user})
+        console.log(response.data)
+    }
 
-                deleteData =async(id)=>{
+    deleteData = async (id) => {
 
-                            const response = await API.delete("thing/" + (id))
-                            console.log(response.data)
-                            }
+        const response = await API.delete("thing/" + (id))
+        console.log(response.data)
+    }
 
 
-async componentDidMount() {
-let array = this.state.users
-await this.sendData(array)
-}
+    async componentDidMount() {
+        let array = this.state.users
+        await this.sendData(array)
+    }
 
     async updateApi(state) {
         await this.deleteData(1)
         await this.sendData(state)
     }
-
 
 
     read = (id) => {
@@ -109,7 +108,7 @@ await this.sendData(array)
             }
         })
 
-this.updateApi(newArray)
+        this.updateApi(newArray)
 
         return this.setState({
             users: newArray
@@ -128,14 +127,14 @@ this.updateApi(newArray)
                     id: id,
                     name: user.name,
                     img: img,
-                    newImg : ''
+                    newImg: ''
                 }
             } else {
                 return user
             }
         })
 
-this.updateApi(newArray)
+        this.updateApi(newArray)
 
         return this.setState({
             users: newArray
@@ -143,12 +142,7 @@ this.updateApi(newArray)
     }
 
 
-
-
-
-
-
-    handleIt=(e)=>{
+    handleIt = (e) => {
         // console.log(e.target.name)
 
         this.setState({
@@ -156,13 +150,9 @@ this.updateApi(newArray)
         })
     }
 
-    add=()=>{
-        this.write(this.state.name , this.state.img)
+    add = () => {
+        this.write(this.state.name, this.state.img)
     }
-
-
-
-
 
 
     render() {
@@ -178,12 +168,16 @@ this.updateApi(newArray)
             <input type={"text"} name={'name'} value={this.state.name} onChange={this.handleIt} placeholder={'name'}/>
             <input type={"text"} name={'img'} value={this.state.img} onChange={this.handleIt} placeholder={'img'}/>
             <button onClick={this.add}>add</button>
-            <input type={"text"} name={'newImg'} value={this.state.newImg} onChange={this.handleIt}  placeholder={'new img'}/>
-            <input type={"text"} name={'newName'} value={this.state.newName} onChange={this.handleIt}  placeholder={'new name'}/>
+            <input type={"text"} name={'newImg'} value={this.state.newImg} onChange={this.handleIt}
+                   placeholder={'new img'}/>
+            <input type={"text"} name={'newName'} value={this.state.newName} onChange={this.handleIt}
+                   placeholder={'new name'}/>
 
             {users.map(user => {
-                return <Item name={user.name} img={user.img} delete={this.delete} newImg={this.state.newImg} newName={this.state.newName} editImg={this.updateImg} editName={this.updateName} id={user.id} />
-                })
+                return <Item name={user.name} img={user.img} delete={this.delete} newImg={this.state.newImg}
+                             newName={this.state.newName} editImg={this.updateImg} editName={this.updateName}
+                             id={user.id}/>
+            })
             }
         </>
     }
